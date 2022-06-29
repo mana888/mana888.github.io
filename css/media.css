@@ -1,0 +1,366 @@
+/*media only for portrait ipad and landsc mobile*/
+@media (max-width: 1024px) and (orientation: portrait),(max-width: 1023px) {
+    .main__wrapper .logo img {
+        margin-top: 20px;
+    }
+
+    .offer__logo {
+        display: block;
+        margin-bottom: 20px!important;
+    }
+
+
+    .video {
+        display: none;
+    }
+
+    .offer__logo-small {
+        z-index: 3;
+        margin-top: 30px;
+    }
+
+    .main__wrapper {
+        -webkit-box-orient: vertical;
+        /* -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; */
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .main__offer {
+        width: 100%;
+        min-height: 55%;
+        background: #022d3fb8;
+    }
+
+
+    .main__bandit {
+        text-align: center;
+        width: 100%;
+        height: 45%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        /*background: url(../images/api-casino1.png) no-repeat;
+        background-size: cover;
+        background-position: center;*/
+    }
+
+    .main__bandit--opacity {
+        position: inherit;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        
+    }
+
+    /*    delete shadows*/
+    .light-shadow, .warrior {
+        display: none;
+    }
+
+    .black-shadow {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .offer {
+        margin: 10px;
+		max-width: fit-content;
+    }
+
+    /*    fonts*/
+    .offer__price--gradient {
+        font-size: 1.2rem;
+    }
+
+    .offer__on-cash {
+        font-size: 0.8rem;
+        margin-bottom: 45px;
+    }
+
+    .offer__code {
+        height: 70px;
+        margin-bottom: 25px;
+    }
+
+    .offer__code--text {
+        font-size: 3vw;
+    }
+
+    .offer__claim {
+        height: 70px;
+        font-size: 3vw;
+    }
+
+}
+
+@media (max-width: 1025px) {
+
+    .terms {
+        display: none;
+    }
+
+    .terms_small {
+        display: block;
+        font-size: 20px;
+        color: #706246;
+        z-index: 12;
+        text-align: center;
+        margin: 2em auto 1em;
+        max-width: 100%;
+    }
+
+	.offer {
+		width: auto;
+		max-width: fit-content;
+	}
+    .message {
+        display: none;
+    }
+
+    .main__bandit--opacity {
+        z-index: -2;
+    }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (min-height: 550px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .main__wrapper .logo img {
+        margin-top: 20px;
+    }
+
+    .main__offer {
+        width: 100%;
+    }
+
+    .main__bandit {
+        width: 100%;
+    }
+
+    .terms_small {
+        display: block;
+    }
+
+    .offer {
+        width: auto;
+		max-width: fit-content;
+    }
+
+    .terms {
+        display: block;
+        font-size: 13px;
+    }
+
+    .warrior {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .offer__logo {
+        margin-bottom: 50px;
+    }
+
+    body {
+        font-family: Arial, sans;
+    }
+
+    .offer__code, .offer__claim {
+        height: 65px;
+        font-size: 1.7vw;
+    }
+
+    .offer__price {
+        margin-bottom: 25px;
+    }
+
+    .offer__on-cash {
+        margin-bottom: 40px;
+    }
+
+}
+
+/*ipad landscape*/
+/*@media (min-width: 550px) and (min-height: 500px) and (orientation: landscape) and (max-width: 1023px){*/
+  
+/*}*/
+
+
+/*mob landsc*/
+@media (orientation: landscape)
+and (max-height: 460px)
+and (max-width: 1000px) {
+
+    .main__wrapper {
+        height: auto;
+    }
+
+    .black-shadow {
+        display: none;
+    }
+
+    .main__offer {
+        background: black;
+    }
+
+    .offer__logo-small {
+        margin-top: 30px;
+        z-index: 10;
+        opacity: 0;
+        display: none;
+    }
+
+    .terms {
+        display: none;
+    }
+
+    .terms_small {
+        display: block;
+        font-size: 14px;
+        color: #706246;
+        z-index: 12;
+        text-align: left;
+        margin: 2em auto 1em;
+        max-width: 70%;
+    }
+
+    .offer__code, .offer__claim {
+        height: 60px;
+    }
+
+    .offer__claim {
+        font-size: 2.5vw;
+    }
+
+    .offer__price {
+        margin-bottom: 15px;
+    }
+
+    .offer__on-cash {
+        margin-bottom: 35px;
+    }
+
+}
+
+/*for mob portrait*/
+@media (max-width: 500px) {
+    .offer__logo-small {
+        margin-top: 80px;
+    }
+
+    .main__bandit--opacity {
+        width: 68% !important;
+        z-index: -1;
+    }
+
+    .main__bandit {
+        height: 38%;
+    }
+
+    .main__offer {
+        height: auto;
+    }
+
+    .main__wrapper {
+        height: 100vh;
+    }
+
+    .offer {
+        width: auto;
+		max-width: fit-content;
+    }
+
+    .offer__price {
+        margin-bottom: 15px;
+    }
+
+    .offer__on-cash {
+        font-size: 0.6rem;
+        margin-bottom: 30px;
+    }
+
+    .offer__code, .offer__claim {
+        height: 55px;
+        margin-bottom: 20px;
+    }
+
+    .offer__button {
+        width: 100%;
+    }
+
+    .offer__claim, .offer__code--text {
+        font-size: 0.65rem;
+    }
+	
+    .terms {
+        display: none;
+    }
+
+    .terms_small {
+        display: block;
+        font-size: 13px;
+        color: #706246;
+        z-index: 12;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .offer__price--gradient {
+        font-size: 7vw;
+    }
+}
+
+
+
+/* @media (max-width: 321px) {
+    .main__wrapper {
+        height: auto;
+    }
+
+    .offer {
+        margin: 0 1em 1em;
+    }
+
+    .offer__on-cash {
+        margin-bottom: 15px;
+    }
+
+    .offer__code, .offer__claim {
+        height: 45px;
+    }
+
+    .main__bandit--opacity {
+        width: 70% !important;
+    }
+
+    .black-shadow {
+        top: auto;
+        bottom: auto;
+    }
+	.offer__info {
+		display: block;
+		position: absolute;
+		bottom: 100;
+		bottom: 100px;
+		left: -0.5rem;
+	}
+} */
